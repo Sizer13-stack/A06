@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { usePlan } from "@/lib/PlanContext";
 
 const links = [
-  { href: "/#library", label: "Workout" },
+  { href: "/#library", label: "Workouts" },
   { href: "/my-plan", label: "My Plan" },
 ];
 
@@ -46,22 +46,22 @@ export default function Navbar() {
           })}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <Link
             href="/my-plan"
-            className="flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 text-xs font-bold text-accent-foreground"
+            className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-foreground"
           >
             Plan
-            <span className="inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-accent-foreground px-1 text-[10px] text-accent">
+            <span className="inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-accent px-1 text-[10px] text-accent-foreground">
               {plan.length}
             </span>
           </Link>
           <Link
             href="/my-plan"
-            className="flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-xs font-bold text-foreground"
+            className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-foreground"
           >
             Saved
-            <span className="inline-flex h-4 min-w-4 items-center justify-center rounded-full border border-border px-1 text-[10px]">
+            <span className="inline-flex h-5 min-w-5 items-center justify-center rounded-full border border-border px-1 text-[10px]">
               {saved.length}
             </span>
           </Link>
