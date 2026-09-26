@@ -9,9 +9,9 @@ import Spinner from "@/components/Spinner";
 
 function StatCard({ label, value }) {
   return (
-    <div className="rounded-xl border border-border bg-surface p-5 text-center">
-      <p className="font-display text-3xl font-bold text-accent">{value}</p>
-      <p className="text-xs text-muted uppercase tracking-wide mt-1">{label}</p>
+    <div className="rounded-xl border border-border bg-surface p-3 sm:p-5 text-center">
+      <p className="font-display text-2xl sm:text-3xl font-bold text-accent">{value}</p>
+      <p className="text-[10px] sm:text-xs text-muted uppercase tracking-wide mt-1">{label}</p>
     </div>
   );
 }
@@ -55,7 +55,7 @@ export default function MyPlanPage() {
         Cap of five lifts for today. Finish them, then load more.
       </p>
 
-      <div className="grid grid-cols-3 gap-4 mb-10">
+      <div className="grid grid-cols-3 gap-2 sm:gap-4 mb-10">
         <StatCard label="Exercises" value={metrics.exercises} />
         <StatCard label="Minutes" value={metrics.minutes} />
         <StatCard label="Calories" value={metrics.calories} />

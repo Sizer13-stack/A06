@@ -43,7 +43,7 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <section id="library" className="container-page py-14 md:py-20 scroll-mt-16">
+      <section id="library" className="container-page py-14 md:py-20 scroll-mt-28 md:scroll-mt-16">
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
           <div>
             <h2 className="font-display text-3xl sm:text-4xl font-bold uppercase mb-2">
