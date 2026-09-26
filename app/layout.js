@@ -22,6 +22,12 @@ export const metadata = {
     "FitLog is a dark, no-nonsense gym companion: pick a lift, lock it into today's plan, and watch the week's work add up.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0b0b0d",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${oswald.variable} ${inter.variable} h-full`}>
