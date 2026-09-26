@@ -58,5 +58,5 @@ Deploy on Vercel, Netlify, Cloudflare Pages, or any Next.js-compatible host. No 
 
 ## Submission
 
-- Live Link:
-- GitHub Repository Link:
+- Live Link: https://whata-hassle.netlify.app/
+- GitHub Repository Link: https://github.com/Sizer13-stack/A06 
